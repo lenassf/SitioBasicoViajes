@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+/* Estilos generales */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fondo.jpg');
+    opacity: 0.17; 
+    z-index: -1; /* Para asegurar que el pseudo-elemento esté detrás del contenido */
+}
+
+/* Estilos de la parte superior */
+
+header div #portada {
+    width: 5%;
+    margin-left: 20px;
+}
+
+.lema {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.lema h1 {
+    font-size: 17px;
+}
+
+header {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 10px 0;
+    
+}
+
+.navbar {
+    display: flex;
+    /*justify-content: space-between;
+    padding: 0 20px;*/
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px; 
+}
+
+.navbar ul li a:hover {
+    background-color: #a3a9bc;
+}
+
+/* Estilos del pie de página */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos del contenido principal */
+
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Estilos para la página de historias*/
+
+table video {
+    display: block; 
+    margin: 0 auto; 
+}
+
+table iframe {
+    display: block; /* Asegura que el iframe sea un elemento de bloque */
+    margin: 0 auto; /* Establece márgenes automáticos para alinear al centro */
+}
+
+table img {
+    width: 100%;
+    height: auto; 
+}
+
+table #right {
+    text-align: right; 
+}
+
+/* Estilos para la página de contacto */
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+h2{
+    font-family: "Kode Mono", monospace;
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.map {
+    margin-top: 20px;
+    height: 460px; 
+}
